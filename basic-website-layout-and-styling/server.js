@@ -2,10 +2,12 @@ const express = require('express')
 const app = express()
 const path = require('path');
 
-app.get('/*', (req, res) => {
+app.use(express.static(__dirname + '/public'));
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname+'/index.html'))
 })
 
-app.listen(8888, () => {
-  console.log('server listen at port 3000')
+const port = process.env.PORT || 8888
+app.listen(port, () => {
+  console.log(`server listen at port ${port}`)
 })

@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/index.css">
+  <!-- meta viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Web Specialist Lab</title>
 </head>
+
 <body>
-  oks
+  <h2>Flexbox</h2>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  <br>
+  <br>
+
+  <h2>Responsive image</h2>
+  <div class="images">
+    <!-- <img
+      srcset="photo-big.jpg 1000w, photo-small.jpg 500w"
+      sizes="100vw"
+      alt="mountain view"> -->
+
+
+    <figure>
+      <picture>
+        <source media="(max-width: 1200px)" srcset="photo-big.jpg 1000w,
+                        photo-small.jpg 500w" />
+        <!-- <source media="(min-width: 500px)"
+                srcset="images/horses_medium.jpg" /> -->
+        <img src="photo-small.jpg" alt="Horses in Hawaii">
+      </picture>
+      <figcaption>Mountain view</figcaption>
+    </figure>
+  </div>
+
+  <br><br>
+
+  <h2>Video</h2>
+  <video poster="photo-big.jpg" controls>
+    <source src="video.webm" type="video/webm">
+    <!-- <source src="video.webm#t=5,10" type="video/webm"> -->
+    <source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4" type="video/mp4">
+    <p>Your browser does not support the video element.</p>
+  </video>
+
+  <div class="video-container">
+    <iframe src="//www.youtube.com/embed/l-BA9Ee2XuM"
+            frameborder="0" width="560" height="315">
+    </iframe>
+  </div>
+
+  <br><br>
+
+  <h2>Add touch to your site</h2>
+  <div class="buttons">
+    <button>Default</button>
+  </div>
 </body>
+
 </html>

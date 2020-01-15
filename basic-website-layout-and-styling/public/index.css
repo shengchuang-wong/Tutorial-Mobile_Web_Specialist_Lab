@@ -1,0 +1,75 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 200px;
+  width: 100%;
+  background: burlywood;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container > .box {
+  width: 30%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blanchedalmond;
+  font-size: 2rem;
+}
+
+.container > .box:nth-child(2) {
+  background: darkgray;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    background: darkgoldenrod;
+  }
+}
+
+.images img {
+  max-width: 100vw;
+  height: 200px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
+  margin-bottom: 150px;
+}
+
+button {
+  background: blue;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  outline: none;
+}
+
+button:active {
+  user-select: none;
+  background: darkgray;
+  -webkit-tap-highlight-color: transparent;
+}
