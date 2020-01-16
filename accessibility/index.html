@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Accessibility</title>
+</head>
+<body>
+
+  <h2>Focus</h2>
+  <p>tabindex="0" to make if focusable</p>
+  <p tabindex="0">This is a paragraph</p>
+  <p>tabindex="-1" to make it unfocusable</p>
+  <button tabindex="-1">Can't focus me</button>
+
+  <br><br>
+
+  <h2>Semantics</h2>
+
+  <br><br>
+
+  <h2>Accessibility tree</h2>
+  <label>
+    <input type="checkbox">Receive promotional offers?</input>
+  </label>
+  <p>or</p>
+  <input id="promo" type="checkbox"></input>
+  <label for="promo">Receive promotional offers?</label>
+
+  <br><br>
+
+  <h2>ARIA Labels and Relationships</h2>
+
+
+
+</body>
+</html>
